@@ -14,7 +14,17 @@ from Parks_and_Recreation.employee_demographics
 group by gender
 having avg(age)>40;
 
+-- complex
 select occupation, avg(salary)
 from Parks_and_Recreation.employee_salary
+where occupation like '%manager%'
+group by occupation;
+
+-- more complex
+select occupation, avg(salary)
+from Parks_and_Recreation.employee_salary
+where occupation like '%manager%'
 group by occupation
-having avg(salary)>40;
+having avg(salary)>75000;
+
+-- 
