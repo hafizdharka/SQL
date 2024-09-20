@@ -7,3 +7,4 @@ from (
     from logs
 ) cons
 where num=one and num=two
+
